@@ -32,6 +32,7 @@ namespace WPF_Proxy.ViewModel
         {
             PauseProfile_CMD = new RelayCommand<ProfileDetail>((p) => { return p != null && Profiles != null && Profiles.Contains(p); }, (p) => { PauseProfile(p); });
         }
+
         void FirstLoad()
         {
             Add500Row();
